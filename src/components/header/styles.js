@@ -30,7 +30,7 @@ export const HeaderInputContainer = styled.div`
 export const HeaderInput = styled.input`
     width: 200px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 8px;
     border: none;
     padding: 0 16px;
     color: #444;
