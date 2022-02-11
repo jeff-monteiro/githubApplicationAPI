@@ -15,7 +15,7 @@ const Header = () => (
             <HeaderInput />
             
             <HeaderSearchButton>
-                <FiSearch size={15} />
+                <FiSearch size={16} />
             </HeaderSearchButton>
         </HeaderInputContainer>
     </HeaderSection>

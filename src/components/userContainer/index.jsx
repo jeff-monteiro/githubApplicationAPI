@@ -1,6 +1,4 @@
-import {
-    Section
-} from './styles';
+import { Section } from './styles';
 
 const UserContainer = props => (
     <Section>

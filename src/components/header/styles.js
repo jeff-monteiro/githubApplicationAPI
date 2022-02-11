@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderSection = styled.header`
-    width: 400px;
+    width: 450px;
     height: 130px;
     background: rgba(255,255,255, .2);
     border-radius: 10px;
@@ -28,11 +28,11 @@ export const HeaderInputContainer = styled.div`
 `
 
 export const HeaderInput = styled.input`
-    width: 200px;
+    width: 300px;
     height: 30px;
     border-radius: 8px;
     border: none;
-    padding: 0 16px;
+    padding: 0 10px;
     color: #444;
     transition: .4s ease;
 
