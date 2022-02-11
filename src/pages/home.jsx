@@ -4,6 +4,7 @@ import UserContainer from '../components/userContainer';
 
 import UserProfile from '../components/userProfile';
 import UserInfo from '../components/userInfo';
+import UserNumbers from '../components/userNumbers';
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <UserContainer>
                 <UserProfile url= 'https://avatars.githubusercontent.com/u/81328013?v=4' text= 'image'/>
                 <UserInfo name='Jefferson Monteiro' login='#jeff-monteiro' bio='Developer Student'/>
+                <UserNumbers />
             </UserContainer>
         </Container>
     );
