@@ -3,7 +3,7 @@ import styled from 'styled-components';
 //Primeiro componente utilizando uma string literals ou template string
 export const Container = styled.div`
   width: 100%;
-  height: 20px;
+  height: 200px;
   display: flex; <!-- Para manter a centralização do componente -->
   align-items: central;
   justify-content: center;
