@@ -29,12 +29,12 @@ export const Numbers = styled.div`
     text-align: center;
     color: #777;
   }
-
+  // Permite as configurações com o passar do mouse por cima do componente
   &:hover {
     cursor: pointer;
     background: rgba(0, 0, 0, 0.05);
-    transition: .6s ease
-    border-radius: 4px;
+    transition: .6s ease;
+    border-radius: 6px;
   }
 
 `
