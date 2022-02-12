@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FiSearch } from 'react-icons/fi';
 
 import { HeaderSection, HeaderTitle, HeaderInputContainer, HeaderInput, HeaderSearchButton } from './styles';
 import clientAPI from '../../services/clientAPI.js'
+import { context } from '../../context'
 
 const Header = () => {
+    const cnx = useContext(context)
     const [searchedValue, setSearchedValue] = useState('');
 
     async function getUser(){
@@ -16,7 +18,7 @@ const Header = () => {
         }
     }
     return(
-        <HeaderSection>
+        <HeaderSection> {console.log(cnx)}
             <HeaderTitle>Github Profile</HeaderTitle>
             <HeaderInputContainer>
                 <HeaderInput value={searchedValue} onChange={e => setSearchedValue(e.target.value)}/>
