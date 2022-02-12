@@ -18,7 +18,7 @@ export default function Home() {
             <UserContainer>
                 <UserProfile url= {cnx.userData?.avatar_url} text= {cnx.userData?.login} />
                 <UserInfo name= {cnx.userData?.name} login= {cnx.userData?.login} bio= {cnx.userData?.bio} />
-                <UserNumbers />
+                <UserNumbers repos={cnx.userData?.public_repos} followers={cnx.userData?.followers} following={cnx.userData?.following} />
             </UserContainer>
         </Container>
     );

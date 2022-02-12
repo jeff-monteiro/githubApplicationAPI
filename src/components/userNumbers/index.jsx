@@ -10,15 +10,15 @@ const UserNumbers = props => {
     return(
       <Container>
         <Numbers onClick={() => handleOnClick('/repos')}>
-          <h1>15</h1>
+          <h1>{props.repos}</h1>
           <h2>Repositories</h2>
         </Numbers>
         <Numbers onClick={() => handleOnClick('/followers')}>
-          <h1>20</h1>
+          <h1>{props.followers}</h1>
           <h2>Followers</h2>
         </Numbers>
         <Numbers onClick={() => handleOnClick('/following')}>
-          <h1>10</h1>
+          <h1>{props.following}</h1>
           <h2>Following</h2>
         </Numbers>
       </Container>
