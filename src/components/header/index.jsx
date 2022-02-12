@@ -12,13 +12,13 @@ const Header = () => {
     async function getUser(){
         try {
             const response = await clientAPI.get(`/${searchedValue}`)
-            console.log(response.data);
+            cnx.setUserData(response.data);
         } catch(err) {
             console.log(err)
         }
     }
     return(
-        <HeaderSection> {console.log(cnx)}
+        <HeaderSection>
             <HeaderTitle>Github Profile</HeaderTitle>
             <HeaderInputContainer>
                 <HeaderInput value={searchedValue} onChange={e => setSearchedValue(e.target.value)}/>
