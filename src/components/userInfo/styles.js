@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: 100px;
-  display: flex; <!-- Para manter a centralização do componente -->
+  display: flex;
   align-items: central;
   flex-direction: column;
 `
@@ -25,19 +25,18 @@ export const Username = styled.h2`
 
 `
 
-export const Desc = styled.p`
-  width: 200%;
+export const Desc = styled.div`
+  width: 300%;
   height: 30px;
-  margin-top: 8px 0;
+  margin: 10px 0;
   margin-left: 20px;
   font-size: 14px;
   text-align: justify;
   color: #777;
-  line-height: 1.5;
+  line-height: 1.3;
   overflow: hidden;
 
-  @media (max-width 430px) {
+  @media (max-width: 430px) {
     width: 250px;
   }
-
 `

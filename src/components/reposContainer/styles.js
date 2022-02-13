@@ -6,7 +6,7 @@ export const Section = styled.section`
   height: 400px;
   background: rgba(255,255,255,.95);
   border-radius: 8px;
-  border-bottom: 8px solid #3492eb;
+  border-bottom: 8px solid rgba(23, 94, 154, 0.66);
   margin-top: 15px;
 
   @media (max-width: 430px) {
