@@ -29,7 +29,7 @@ export const Desc = styled.div`
   height: 30px;
   margin: 10px 0;
   max-width: 100%;
-  margin-left: 10px;
+  margin-left: 20px;
   font-size: 14px;
   text-align: justify;
   color: #777;
