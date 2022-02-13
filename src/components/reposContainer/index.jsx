@@ -15,3 +15,5 @@ const ReposContainer = props => {
     </Section>
   )
 }
+
+export default ReposContainer;

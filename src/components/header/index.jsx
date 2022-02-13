@@ -12,7 +12,10 @@ const Header = () => {
     async function getUser(){
         try {
             const response = await clientAPI.get(`/${searchedValue}`)
+            const repos = await clientAPI.get(`/${searchedValue}/repos`)
+
             cnx.setUserData(response.data);
+            cnx.setRepos(repos.data);
         } catch(err) {
             console.log(err)
         }

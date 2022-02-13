@@ -10,7 +10,7 @@ const Repos = props => {
 
   return (
     <Container>
-      <ReposContainer name='abc' repos={{}} />
+      <ReposContainer name={cnx.userData?.name} repos={cnx.repos} />
     </Container>
   );
 }
