@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 
 import Container from '../components/container'
+import Folling from '../components/follingContainer'
 
 
 import { context } from '../context'

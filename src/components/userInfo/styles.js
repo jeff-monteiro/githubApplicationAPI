@@ -22,19 +22,18 @@ export const Username = styled.h2`
   font-weight: 400;
   color: #777;
   padding: 8px;
-
 `
 
 export const Desc = styled.div`
-  width: 300%;
+  width: 90%;
   height: 30px;
   margin: 10px 0;
-  margin-left: 20px;
+  max-width: 100%;
+  margin-left: 10px;
   font-size: 14px;
   text-align: justify;
   color: #777;
-  line-height: 1.3;
-  overflow: hidden;
+  line-height: 1.5;
 
   @media (max-width: 430px) {
     width: 250px;

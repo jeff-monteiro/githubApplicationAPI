@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
     width: 450px;
+    height: auto;
     background: rgba(255,255,255,.95);
     border-radius: 10px;
     border-bottom: 8px solid rgba(23, 94, 154, 0.66);
