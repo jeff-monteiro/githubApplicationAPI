@@ -19,7 +19,7 @@ export default function Home() {
                 {cnx.userData?.name ?
                 <>
                     <UserProfile url= {cnx.userData?.avatar_url} text= {cnx.userData?.login} />
-                    <UserInfo name= {cnx.userData?.name} login= {cnx.userData?.login} bio= {cnx.userData?.bio} />
+                    <UserInfo name= {cnx.userData?.login} login= {cnx.userData?.html_url} bio= {cnx.userData?.bio} />
                     <UserNumbers repos={cnx.userData?.public_repos} followers={cnx.userData?.followers} following={cnx.userData?.following} />
                 </>
                 : undefined}

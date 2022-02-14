@@ -11,7 +11,7 @@ const Following = props => {
 
   return (
     <Container>
-      
+      <Folling name={cnx.userData?.name} repos={cnx.following}></Folling>
     </Container>
   );
 }
