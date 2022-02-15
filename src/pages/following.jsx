@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 
 import Container from '../components/container'
-import Folling from '../components/follingContainer'
+import FollingContainer from '../components/follingContainer'
 
 
 import { context } from '../context'
@@ -11,7 +11,7 @@ const Following = props => {
 
   return (
     <Container>
-      <Folling name={cnx.userData?.name} repos={cnx.following}></Folling>
+      <FollingContainer login={cnx.userData?.name} following={cnx.following}></FollingContainer>
     </Container>
   );
 }

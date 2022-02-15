@@ -1,19 +1,20 @@
 import React, { useContext } from 'react'
 
 import Container from '../components/container'
-import Foller from '../components/follerContainer'
-
+import FollersContainer from '../components/follersContainer'
 
 import { context } from '../context'
 
-const Followers = props => {
+const Follers = props => {
   const cnx = useContext(context)
 
   return (
     <Container>
-      <Foller name={cnx.userData?.name} followers={cnx.followers}></Foller>
+      <FollersContainer name={cnx.userData?.name} followers={cnx.followers} ></FollersContainer>
     </Container>
   );
 }
+  
 
-export default Followers;
+
+export default Follers;
