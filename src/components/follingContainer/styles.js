@@ -31,7 +31,7 @@ export const ListFollingContainer = styled.h1`
   overflow-y: scroll;
 `
 
-export const Foll = styled.h2`
+export const Folling = styled.h2`
   width: 100%;
   height: 80px;
   background: rgba(0,0,0,.05);

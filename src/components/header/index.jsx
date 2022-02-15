@@ -14,10 +14,12 @@ const Header = () => {
             const response = await clientAPI.get(`/${searchedValue}`)
             const repos = await clientAPI.get(`/${searchedValue}/repos`)
             const followers = await clientAPI.get(`/${searchedValue}/followers`)
+            const following = await clientAPI.get(`/${searchedValue}/following`)
 
             cnx.setUserData(response.data);
             cnx.setRepos(repos.data);
             cnx.setFollowers(followers.data);
+            cnx.setFollowing(following.data);
         } catch(err) {
             console.log(err)
         }

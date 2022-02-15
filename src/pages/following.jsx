@@ -11,7 +11,7 @@ const Following = props => {
 
   return (
     <Container>
-      <FollingContainer login={cnx.userData?.name} following={cnx.following}></FollingContainer>
+      <FollingContainer name={cnx.userData?.name} following={cnx.following}></FollingContainer>
     </Container>
   );
 }
