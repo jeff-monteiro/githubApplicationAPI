@@ -3,7 +3,7 @@ import { Section, Title, ListOfFollersContainer, Foller } from './styles.js'
 const FollerContainer = props => {
   return (
     <Section>
-      <Title>Followers of {(props.name)?.split(' ')[0]}</Title>
+      <Title>Followers {(props.name)?.split(' ')[0]}</Title>
       <ListOfFollersContainer>
         {(props?.followers).map(follers =>(
           <Foller onClick={() => window.location.href(follers?.followers_url)} key={follers?.id} >
